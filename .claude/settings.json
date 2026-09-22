@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "deny": [
+      "Edit(/payment/payment.go)",
+      "Edit(/wallet/wallet.go)",
+      "Edit(/orders/orders.go)",
+      "Edit(/payment/payment_test.go)",
+      "Edit(/wallet/wallet_test.go)",
+      "Edit(/orders/orders_test.go)",
+      "Edit(/REPORT.md)",
+      "Edit(/prompts/interface-extraction-prompt.md)",
+      "Edit(/.github/workflows/tests.yml)"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Edit|Write|MultiEdit|NotebookEdit|Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$CLAUDE_PROJECT_DIR\"/.claude/hooks/protect-homework.sh",
+            "timeout": 10,
+            "statusMessage": "Checking homework guardrail"
+          }
+        ]
+      }
+    ]
+  }
+}
