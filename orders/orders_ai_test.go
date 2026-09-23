@@ -7,10 +7,10 @@ import (
 
 // MockOrderStore — mock реалізація OrderStore для тестування.
 type MockOrderStore struct {
-	ExecFunc      func(query string, args ...any) error
-	LastQuery     string
-	LastArgs      []any
-	CallCount     int
+	ExecFunc  func(query string, args ...any) error
+	LastQuery string
+	LastArgs  []any
+	CallCount int
 }
 
 // Exec реалізує OrderStore інтерфейс для mock.
