@@ -35,6 +35,9 @@ func NewOrderService(store OrderStore) *OrderService {
 //   - поверніть помилку, якщо Exec її повернув;
 //   - інакше поверніть nil.
 func (s *OrderService) PlaceOrder(orderID string, amount float64) error {
-	// TODO: ваш код тут
+	err := s.store.Exec("select order_id from orders where order_date = ?", "2020-02-02")
+	if err != nil {
+		return err
+	}
 	return nil
 }
