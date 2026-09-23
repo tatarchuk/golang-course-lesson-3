@@ -18,4 +18,7 @@
      Markdown. -->
 
 ## Мій промпт
-
+You are the Senior Go developer, and know how to make a clean code, we need to refactor order.go file. 
+Please suggest me refactored file content as output taking into account two points: interface OrderStore now using a      
+single method to execute DB queries, please split it into atomic CRUD operations; 
+OrderService should acquire dependency through constructor using dependency injection 
