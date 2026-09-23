@@ -2,9 +2,7 @@
 
 ## 1. Посилання на код
 
-<!-- TODO(звіт-1): видаліть цей HTML-коментар і вставте посилання на
-     ваш робочий Go-код із Розділу 1 (наприклад, посилання на цей
-     самий репозиторій / конкретний коміт / гілку). -->
+https://github.com/tatarchuk/golang-course-lesson-3
 
 ## 2. Промпт з Розділу 2
 
@@ -17,11 +15,12 @@
 міксування value та pointer ресиверів є небезпечним і як ШІ допомагає
 проектувати інтерфейси на стороні споживача?»*
 
-<!-- TODO(звіт-3): видаліть цей HTML-коментар і напишіть вашу
-     відповідь (1-2 абзаци) звичайним видимим текстом Markdown. -->
+Value and pointer receiver mixing can't guarantee the data consistency, program is going to 
+unexpected and undefined state during the execution, it may have serious impact to the customers and money loss.
+
+Usage of AI can help to maintain applications with clean code and clean architecture, keep SOLID principles 
+and design patterns.
 
 ## 4. Скріншоти / відео виконання
 
-<!-- TODO(звіт-4): видаліть цей HTML-коментар і вставте посилання на
-     Google Doc / відео зі скріншотами роботи програми та виконаного
-     завдання. -->
+https://docs.google.com/document/d/1JhcUdPRAM3LhYIQmDN7IoXIwW5-peb-QFl7_-OUp3_Y/edit?usp=sharing

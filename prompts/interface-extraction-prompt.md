@@ -13,10 +13,6 @@
 - **бажаний формат виводу** (наприклад, "поверни лише Go-код у трьох
   блоках: інтерфейс, сервіс, мок").
 
-<!-- TODO(розділ-2): видаліть цей HTML-коментар і вставте текст
-     вашого промпту нижче цього рядка, звичайним видимим текстом
-     Markdown. -->
-
 ## Мій промпт
 You are the Senior Go developer, and know how to make a clean code, we need to refactor order.go file. 
 Please suggest me refactored file content as output taking into account two points: interface OrderStore now using a      
